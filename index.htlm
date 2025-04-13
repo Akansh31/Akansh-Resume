@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Supply Chain & Operations Specialist Portfolio - Resume of [Your Name]">
+  <title>Supply Chain & Operations | [Your Name]</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow-md p-6" id="header">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">[Your Name]</h1>
+      <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
+    </div>
+  </header>
+
+  <section class="py-12 bg-blue-100" id="landing">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Supply Chain & Operations Specialist</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        Detail-oriented and analytical professional with 4+ years of experience in production scheduling, procurement, and inventory management. Seeking to contribute operational expertise to organizations driving innovation.
+      </p>
+      <img src="https://images.unsplash.com/photo-1590650046871-92f603b4b2ac" alt="Logistics Visualization" class="mx-auto mt-6 rounded shadow-md max-w-xl">
+      <a href="/resume.pdf" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-4">About Me</h3>
+      <p>
+        With a background in logistics and operations across energy, ed-tech, and transportation sectors, I specialize in aligning resources and driving process improvements. Skilled in Excel, ERP systems, and data analysis, I bring a strategic mindset to supply chain operations.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-6">Professional Experience</h3>
+      <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdfc5e" alt="Operations Workflow" class="mb-6 rounded shadow-md max-w-3xl mx-auto">
+
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold">Shipment Specialist – ExxonMobil</h4>
+        <p class="text-sm text-gray-600">May 2024 – Present</p>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Managed 1,000+ railcars; improved tracking accuracy across systems</li>
+          <li>Saved $100K+ through invoice validation and cost tracking</li>
+          <li>Generated KPI dashboards to optimize fleet movement</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold">Operation Strategist – Rally Ourbus</h4>
+        <p class="text-sm text-gray-600">Feb 2022 – Dec 2022</p>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Improved driver compliance from 55% to 95%</li>
+          <li>Forecasted resource needs and managed over 2,000 drivers</li>
+          <li>Reduced delivery time by 15% through process optimization</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold">Operation Specialist – Vedantu</h4>
+        <p class="text-sm text-gray-600">Nov 2020 – Oct 2021</p>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Streamlined vendor communication workflows</li>
+          <li>Maintained data accuracy and performed audits</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold">Operation Executive – Awign</h4>
+        <p class="text-sm text-gray-600">Oct 2019 – Nov 2020</p>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Forecasted logistics needs and maintained master data</li>
+          <li>Resolved quality issues across teams and ensured compliance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-6">Education & Certifications</h3>
+      <ul class="list-disc ml-5">
+        <li>PG Diploma in Supply Chain Management – Cape Breton University, Canada</li>
+        <li>B.Sc in Hospitality & Hotel Administration – IHM Jodhpur</li>
+        <li>Google Data Science Foundations Certificate – 2023</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-6">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <span>Strategic Planning and Resource Allocation</span>
+        <span>Logistics & Last-Mile Delivery</span>
+        <span>Data, Cost and KPI Analysis</span>
+        <span>Fleet Optimization & Cost Reduction</span>
+        <span>Problem-Solving and Analytical Skills</span>
+        <span>Procurement Process Support</span>
+        <span>Contract Compliance & Analysis</span>
+        <span>Vendor/Item Master Data Management</span>
+        <span>Billing & Invoice Discrepancy Resolution</span>
+        <span>Inventory & Asset Management</span>
+        <span>Microsoft Excel (VLOOKUP, Pivot Tables, Dashboards)</span>
+        <span>SOP Documentation & Training Support</span>
+        <span>Cross-functional Communication</span>
+        <span>Team Leadership & Workforce Management</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-4">Contact</h3>
+      <p>Email: <a href="mailto:your.email@example.com" class="text-blue-600">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-blue-600">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t py-4 text-center text-sm text-gray-500">
+    &copy; 2025 [Your Name]. All rights reserved.
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('#header, #landing, #about, #experience, #education, #skills, #contact', {
+      duration: 1000,
+      distance: '50px',
+      origin: 'bottom',
+      reset: false,
+      interval: 100
+    });
+  </script>
+</body>
+</html>
