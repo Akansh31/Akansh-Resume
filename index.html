@@ -6,6 +6,37 @@
   <meta name="description" content="Supply Chain & Operations Specialist Portfolio - Resume of Akansh Arora">
   <title>Supply Chain & Operations | Akansh Arora</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-enter {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  </style>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.experience-tab').forEach(tab => {
+        tab.classList.add('hidden');
+        tab.classList.remove('fade-enter-active');
+      });
+      const activeTab = document.getElementById(tabId);
+      activeTab.classList.remove('hidden');
+      activeTab.classList.add('fade-enter');
+      setTimeout(() => {
+        activeTab.classList.add('fade-enter-active');
+        activeTab.classList.remove('fade-enter');
+      }, 10);
+    }
+
+    function toggleSkills() {
+      const skillContent = document.getElementById('skillContent');
+      skillContent.classList.toggle('hidden');
+    }
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
   <header class="bg-white shadow-md p-6" id="header">
@@ -21,9 +52,6 @@
       <p class="text-lg max-w-3xl mx-auto">
         Detail-oriented and analytical professional with 4+ years of experience in production scheduling, procurement, and inventory management. Seeking to contribute operational expertise to organizations driving innovation.
       </p>
-      <a href="resume.pdf" download class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-        Download Resume
-      </a>
     </div>
   </section>
 
@@ -39,8 +67,14 @@
   <section id="experience" class="bg-gray-100 py-12">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-2xl font-bold mb-6">Professional Experience</h3>
+      <div class="flex space-x-4 mb-6 overflow-x-auto">
+        <button onclick="showTab('exxon')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">ExxonMobil</button>
+        <button onclick="showTab('ourbus')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Rally Ourbus</button>
+        <button onclick="showTab('vedantu')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Vedantu</button>
+        <button onclick="showTab('awign')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Awign</button>
+      </div>
 
-      <div class="mb-6">
+      <div id="exxon" class="experience-tab">
         <h4 class="text-xl font-semibold">Shipment Specialist – ExxonMobil</h4>
         <p class="text-sm text-gray-600">May 2024 – Present</p>
         <ul class="list-disc ml-5 mt-2">
@@ -53,7 +87,7 @@
         </ul>
       </div>
 
-      <div class="mb-6">
+      <div id="ourbus" class="experience-tab hidden">
         <h4 class="text-xl font-semibold">Operation Strategist – Rally Ourbus</h4>
         <p class="text-sm text-gray-600">Feb 2022 – Dec 2022</p>
         <ul class="list-disc ml-5 mt-2">
@@ -70,21 +104,23 @@
         </ul>
       </div>
 
-      <div class="mb-6">
+      <div id="vedantu" class="experience-tab hidden">
         <h4 class="text-xl font-semibold">Operation Specialist – Vedantu</h4>
         <p class="text-sm text-gray-600">Nov 2020 – Oct 2021</p>
         <ul class="list-disc ml-5 mt-2">
-          <li>Streamlined vendor communication workflows, improving response time and clarity.</li>
-          <li>Maintained data integrity through audits and cross-functional coordination.</li>
+          <li>Conducted audits and ensured vendor compliance, reducing revenue leakage.</li>
+          <li>Automated communication workflows to streamline internal purchasing processes.</li>
+          <li>Supported item/vendor setup accuracy and performed data cleanup and tracking in Excel.</li>
         </ul>
       </div>
 
-      <div class="mb-6">
+      <div id="awign" class="experience-tab hidden">
         <h4 class="text-xl font-semibold">Operation Executive – Awign</h4>
         <p class="text-sm text-gray-600">Oct 2019 – Nov 2020</p>
         <ul class="list-disc ml-5 mt-2">
-          <li>Forecasted logistics needs and maintained master data for process continuity.</li>
-          <li>Identified and resolved quality issues, ensuring process compliance and team alignment.</li>
+          <li>Evaluated suppliers and ensured data compliance for logistics execution.</li>
+          <li>Led forecasting efforts and maintained master data for logistics planning.</li>
+          <li>Conducted regular quality audits and issue resolution across multiple operations teams.</li>
         </ul>
       </div>
     </div>
@@ -104,7 +140,8 @@
   <section id="skills" class="bg-gray-100 py-12">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-2xl font-bold mb-6">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <button onclick="toggleSkills()" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Skills</button>
+      <div id="skillContent" class="grid grid-cols-2 md:grid-cols-3 gap-4 hidden">
         <span>Strategic Planning and Resource Allocation</span>
         <span>Logistics & Last-Mile Delivery</span>
         <span>Data, Cost and KPI Analysis</span>
